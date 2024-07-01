@@ -2,24 +2,58 @@
     font-family: Helvetica, Arial, sans-serif;
     color: white;
     background-color: black;
+    
 }
-
+body {
+    /* Background here */
+}
 header {
     display: flex;
     /*border: 1px dashed red;*/
-    justify-content: end;
-    /*justify-content: space-between;*/
-    text-align: center;
-    max-height: 75px;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 40px;
+}
+
+#clipart-box {
+    position: relative;
+    bottom: 0.70rem;
+    
+}
+.clipart {
+    width: 6rem;
+    height: 7rem;
+    /*border: 3px solid orange;*/
+}
+
+#who-box {
+    /*border: 1px solid green;*/
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+    right: 13rem;
+    bottom: 0.75rem;
+   
+}
+#who-box p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 45px;
+}
+#question-mark {
+    background-color: black;
 }
 
 #ribbons-box {
     /*border: 1px solid green;*/
     display: flex;
     max-height: 75px;
-    margin-right: 14rem;
     width: 27rem;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: relative;
+    bottom: 2rem;
+    align-items: center;
 }
 
 .ribbon {
@@ -28,14 +62,10 @@ header {
     height: 3rem;
     text-decoration: none;
     padding: 0 15px;
+    font-family: "Roboto Mono", monospace;
+    /*border: 1px solid red;*/
+}
 
-}
-.ribbon:active {
-    position: relative;
-    top: 1px;
-    /*background-color: darkgray;*/
-    border-radius: 50%;
-}
 .ribbon:hover {
     cursor: pointer;
     color: red;
@@ -43,19 +73,19 @@ header {
     /*background-color: grey;*/
 }
 
-#who-box {
-    display: inline-flex;
+.ribbon:active {
     position: relative;
-    right: 108rem;
-    border: 1px solid green;
-    min-width: 100px;
+    top: 1px;
+    color: rgb(92, 87, 87);
+    /*background-color: darkgray;*/
 }
+
 
 #me-pic {
     width: 7rem;
-    /*border: 2px solid rgb(11, 97, 209);
+    border: 2px solid rgb(11, 97, 209);
     border-radius: 50%;
-    background-color: black;*/
+    background-color: black;
 }
 
 
