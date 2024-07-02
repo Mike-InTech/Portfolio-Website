@@ -4,45 +4,63 @@
     background-color: black;
     
 }
+
+@media only screen and (max-width: 745px) {
+    /*#who-box {
+        background-color: red;
+    }*/
+    .clipart {
+        position: relative;
+        top: 1.5rem;
+    }
+    #who-box p {
+        position: relative;
+        bottom: 2rem;
+    }
+
+}
 body {
     /* Background here */
 }
 header {
     display: flex;
     /*border: 1px dashed red;*/
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     min-height: 40px;
 }
 
-#clipart-box {
-    position: relative;
-    bottom: 0.70rem;
-    
-}
-.clipart {
-    width: 6rem;
-    height: 7rem;
-    /*border: 3px solid orange;*/
-}
-
 #who-box {
     /*border: 1px solid green;*/
-    max-width: 200px;
-    max-height: 200px;
-    position: relative;
-    right: 13rem;
-    bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 60rem;
+    max-height: 55rem;
+    /*position: relative;
+    right: 13rem;*/
    
 }
+
+.clipart {
+    max-width: 6rem;
+    max-height: 7rem;
+    /*border: 1px solid orange;*/
+}
+
 #who-box p {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 600;
+    text-align: center;
     letter-spacing: 4px;
     font-size: 45px;
+    /*border: 1px solid yellowgreen;*/
+    min-width: 12rem;
 }
-#question-mark {
-    background-color: black;
+
+#logo {
+    /*border: 1px solid white;*/
 }
 
 #ribbons-box {
@@ -51,6 +69,7 @@ header {
     max-height: 75px;
     width: 27rem;
     justify-content: space-around;
+    flex-shrink: 2;
     position: relative;
     bottom: 2rem;
     align-items: center;
@@ -63,7 +82,7 @@ header {
     text-decoration: none;
     padding: 0 15px;
     font-family: "Roboto Mono", monospace;
-    /*border: 1px solid red;*/
+    /*border: 1px solid orange;*/
 }
 
 .ribbon:hover {
@@ -80,12 +99,23 @@ header {
     /*background-color: darkgray;*/
 }
 
-
-#me-pic {
-    width: 7rem;
-    border: 2px solid rgb(11, 97, 209);
-    border-radius: 50%;
-    background-color: black;
+#banner-box {
+    border: 1px dashed red;
+    display: flex;
+    background-color: #69cbf3;
+    justify-content: center;
+    align-content: center;
 }
 
+#me-pic {
+    max-width: 30rem;
+    /*border: 5px solid rgb(255, 255, 255);*/
+    background-color: #69cbf3;
+    padding-right: 2rem;
+    padding: 5rem 0;
+}
 
+#first-name, #last-name {
+    background-color: #69cbf3;
+    border: 1px solid orangered;
+}
